@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Signup</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+<h2>Join Justice For All</h2>
+
+<form onsubmit="return validateForm()">
+
+<!-- Personal Info -->
+Name:
+<input type="text" id="name" onblur="validateForm()">
+<span id="nameError"></span><br><br>
+
+Birthdate:
+<input type="date" id="birth">
+<span id="birthError"></span><br><br>
+
+Sex:
+<input type="radio" name="sex"> Male
+<input type="radio" name="sex"> Female
+<span id="sexError"></span><br><br>
+
+Email:
+<input type="email" id="email">
+<span id="emailError"></span><br><br>
+
+<!-- Account -->
+Username:
+<input type="text" id="username">
+<span id="userError"></span><br><br>
+
+Password:
+<input type="password" id="password">
+<span id="passError"></span><br><br>
+
+Confirm Password:
+<input type="password" id="confirm">
+<span id="confirmError"></span><br><br>
+
+<!-- Questions -->
+Reason for joining:
+<select id="reason">
+  <option value="">-- choose --</option>
+  <option>Help people</option>
+  <option>Learn about law</option>
+</select>
+<span id="reasonError"></span><br><br>
+
+Issues you care about:
+<input type="checkbox" name="issue"> Poverty
+<input type="checkbox" name="issue"> Corruption
+<input type="checkbox" name="issue"> Abuse
+<span id="issueError"></span><br><br>
+
+Participation:
+<input type="radio" name="participation"> Weekly
+<input type="radio" name="participation"> Monthly
+<span id="partError"></span><br><br>
+
+<button type="submit">Join Us</button>
+
+</form>
+
+<p id="success"></p>
+
+<br>
+<a href="loeee.html">Back to Home</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
